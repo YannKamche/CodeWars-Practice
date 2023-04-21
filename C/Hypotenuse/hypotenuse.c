@@ -11,11 +11,12 @@ double side_Square(double);
 double get_SideA();
 double get_SideB();
 double calc_SideC();
-void display_Result();
 
 int main() 
 {
-    calc_SideC();
+    double result;
+    result = calc_SideC();
+    printf("The hypotenuse is: %f", result);
     return 0;
 }
 
@@ -39,6 +40,6 @@ double get_SideB() {
 }
 
 double calc_SideC(){
-    double C = sqrt(side_Square(get_SideA()) + side_Square(getSideB()));
+    double C = sqrt(side_Square(get_SideA()) + side_Square(get_SideB()));
     return C;
 }
