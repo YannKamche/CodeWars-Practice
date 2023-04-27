@@ -50,7 +50,10 @@ int main()
 int availabeSpace(int cap, int on, int wait)
 {
     if((on + wait) == cap)
-        return 0;
+    {
+         return 0;
+    }
+       
     else
         return ((on + wait) - cap);
 }
